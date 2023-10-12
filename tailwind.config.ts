@@ -1,4 +1,4 @@
-import type { Config } from 'tailwindcss'
+import type { Config } from 'tailwindcss';
 
 const config: Config = {
   content: [
@@ -6,7 +6,31 @@ const config: Config = {
     './components/**/*.{js,ts,jsx,tsx,mdx}',
     './app/**/*.{js,ts,jsx,tsx,mdx}',
   ],
+
   theme: {
+    colors: {
+      main: '#ffffff',
+      primary: '#eb5757',
+      secondary: '#fee9de',
+      success: '#13ce66',
+      warning: '#ffc82c',
+      danger: '#ff4949',
+      red: '#eb3131',
+      blue: '#1fb6ff',
+      black: '#000000',
+      purple: '#7e5bef',
+      pink: '#ff49db',
+      orange: '#ff7849',
+      green: '#13ce66',
+      yellow: '#ffc82c',
+      'gray-dark': '#273444',
+      gray: '#8492a6',
+      'gray-light': '#d3dce6',
+    },
+    fontFamily: {
+      sans: ['Graphik', 'sans-serif'],
+      serif: ['Merriweather', 'serif'],
+    },
     extend: {
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
@@ -15,6 +39,6 @@ const config: Config = {
       },
     },
   },
-  plugins: [],
-}
-export default config
+  plugins: [ require('tailwind-scrollbar')({ nocompatible: true }),],
+};
+export default config;
