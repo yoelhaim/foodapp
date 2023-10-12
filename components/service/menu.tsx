@@ -51,7 +51,7 @@ export default function Menu() {
             <button
               onClick={less}
               className=" bg-[#e0e0e0] text-primary flex justify-center  items-center p-3 rounded-full
-        h-10 w-10  "
+        h-10 w-10 "
             >
              <BiSolidChevronLeft/>
             </button>
@@ -67,7 +67,7 @@ export default function Menu() {
       </div>
 
       <div className="flex flex-col-reverse md:flex-row gap-4 w-full py-4">
-        <div className="w-full md:w-2/6 pr-16 flex flex-col gap-5 h-[350px] overflow-auto">
+        <div className="w-full md:w-2/6 pr-2 md:pr-16 flex flex-col gap-5 h-[350px] overflow-auto">
           {["pizza", "tacos", "burgur", "chawarma", "salade", "autre"].map((i) => (
             <div
               key={i}

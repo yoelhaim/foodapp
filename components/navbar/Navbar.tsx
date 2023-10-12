@@ -28,7 +28,7 @@ const Navbar = () => {
     ]
 
     return(
-        <nav className="h-20 flex  justify-between items-center px-3 md:px-20 fixed inset-0 bg-main">
+        <nav className="h-20 flex  justify-between items-center px-3 md:px-20 fixed inset-0 bg-main z-10">
             <div className="font-semibold text-2xl">Food</div>
         
             <nav>

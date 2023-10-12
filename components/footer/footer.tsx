@@ -1,7 +1,7 @@
 export default function Footer(){
     return(
 
-        <div className=" mt-20 pt-20 p-3 flex gap-5 items-center justify-center w-full" id="contact">
+        <div className=" mt-20 pt-20 p-3 flex flex-col md:flex-row gap-5 items-center justify-center w-full" id="contact">
 
             <div className="">
                 <h5 className="text-2xl font-semibold">Food App</h5>
