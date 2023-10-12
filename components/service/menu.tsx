@@ -68,13 +68,13 @@ export default function Menu() {
 
       <div className="flex flex-col-reverse md:flex-row gap-4 w-full py-4">
         <div className="w-full md:w-2/6 pr-16 flex flex-col gap-5 h-[350px] overflow-auto">
-          {[1, 2, 3, 4, 5, 6].map((i) => (
+          {["pizza", "tacos", "burgur", "chawarma", "salade", "autre"].map((i) => (
             <div
               key={i}
               className="flex border items-center gap-4 bg-primary text-main px-5 py-3 rounded-3xl cursor-pointer transition-all duration-500 ease-in-out   capitalize hover:bg-main hover:border-primary hover:text-primary"
             >
-              <Image src="/img/ban.png" width={20} height={20} alt="food" />
-              <p className="capitalize">pizza</p>
+              <Image src="/img/mypizza.svg" width={20} height={20} alt="food" />
+              <p className="capitalize">{i}</p>
             </div>
           ))}
         </div>
